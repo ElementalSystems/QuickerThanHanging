@@ -1,0 +1,68 @@
+
+body
+{
+background-image: url("back.png");
+ background-size: 100% 100%;
+ font-family: 'Homemade Apple', cursive;
+color: rgba(255,255,240,.5);
+}
+
+#picture
+{
+  height: 10em;
+  width: 10em;
+  background: rgba(255,255,255,.1);
+  margin-left: auto;
+  margin-right: auto;  
+}
+
+h1 {
+ text-align:center;
+ margin-bottom:0px;
+}
+
+h2 {
+ font-size: 400%;
+ text-align:center;
+ margin-bottom:0px;
+ margin-top:0px;
+}
+
+h3 {
+ font-size: 200%;
+ margin-bottom: 0px;
+ margin-top: 0px;
+ text-align:center;
+}
+
+.b1
+{
+ display: inline-block;
+ text-align: center;
+ background-image: url("l_back1.png");
+ background-size: 100% 100%;
+ width: 1em;
+ margin-right:.1em;
+ }
+
+
+.b2
+{
+ display: inline-block;
+ text-align: center;
+ background-image: url("l_back2.png");
+ background-size: 100% 100%;
+ width: 1em;
+ margin-right:.1em;
+ }
+
+
+.b3
+{
+ display: inline-block;
+ text-align: center;
+ background-image: url("l_back3.png");
+ background-size: 100% 100%;
+ width: 1em;
+ margin-right:.1em;
+ }
