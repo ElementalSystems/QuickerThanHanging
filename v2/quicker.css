@@ -1,0 +1,122 @@
+
+body
+{
+background-image: url("back.png");
+  font-family: 'Schoolbell', cursive;
+  color: rgba(255,255,240,.5);
+}
+
+#picture
+{
+  height: 300px;
+  width: 300px;
+  background: url("cartoon1.png");
+  background-size: 400% 100%;
+  margin-left: auto;
+  margin-right: auto;
+  opacity:  .6;
+}
+
+h1 {
+ text-align:center;
+ margin-bottom:0px;
+}
+
+h2 {
+ font-size: 300%;
+ text-align:center;
+ margin-bottom:0px;
+ margin-top:0px;
+}
+
+h3 {
+ font-size: 200%;
+ margin-bottom: 0px;
+ margin-top: 0px;
+ text-align:center;
+}
+
+.let
+{
+ display: inline-block;
+ text-align: center;
+ width: 1em;
+ margin-right:.1em;
+ background-size: 100% 100%;
+}
+
+.letterbutton {
+  color: rgba(255,255,220,.5);
+  margin-left:.1em;
+  cursor:pointer;
+}
+
+.letterbutton.error {
+  color: #F00;
+  opacity: .4;
+  pointer-events: none;
+}
+
+.letterbutton.matched {
+  color: #999;
+  opacity: .2;
+  pointer-events: none;
+}
+
+
+
+.ctloverlay
+{
+  background-image: url("frame.png");
+  background-size: 100% 100%;
+  padding-top:20px;
+  padding-bottom:20px;
+  
+  max-width: 30em;
+  margin-left:auto;
+  margin-right:auto;
+  
+}
+
+#gamewin
+{
+  transform: rotate(-6deg);
+}
+
+#gameloose
+{
+  transform: rotate(-3deg);
+}
+
+.ctloverlay.hidden
+{
+  display: none;
+}
+a.action{
+  text-decoration:none;
+  color: #FFB;
+  font-size:200%;
+  display:block;
+  text-align:center;
+}
+
+.b1
+{
+ background-image: url("l_back1.png");
+ transform: rotate(5deg);
+ }
+
+.b2
+{
+ background-image: url("l_back2.png");
+ transform: rotate(-2deg);
+ }
+
+
+.b3
+{
+ background-image: url("l_back3.png");
+ transform: rotate(-4deg);
+ }
+ 
+ 

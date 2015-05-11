@@ -2,18 +2,19 @@
 body
 {
 background-image: url("back.png");
- background-size: 120% 120%;
- font-family: 'Homemade Apple', cursive;
-color: rgba(255,255,240,.5);
+  font-family: 'Schoolbell', cursive;
+  color: rgba(255,255,240,.5);
 }
 
 #picture
 {
-  height: 10em;
-  width: 10em;
-  background: rgba(255,255,255,.1);
+  height: 300px;
+  width: 300px;
+  background: url("cartoon1.png");
+  background-size: 400% 100%;
   margin-left: auto;
-  margin-right: auto;  
+  margin-right: auto;
+  opacity:  .6;
 }
 
 h1 {
@@ -45,36 +46,77 @@ h3 {
 }
 
 .letterbutton {
-  color: #CCC;
+  color: rgba(255,255,220,.5);
   margin-left:.1em;
+  cursor:pointer;
 }
 
 .letterbutton.error {
   color: #F00;
   opacity: .4;
+  pointer-events: none;
 }
 
 .letterbutton.matched {
   color: #999;
   opacity: .2;
+  pointer-events: none;
 }
 
 
 
+.ctloverlay
+{
+  background-image: url("frame.png");
+  background-size: 100% 100%;
+  padding-top:20px;
+  padding-bottom:20px;
+  
+  max-width: 30em;
+  margin-left:auto;
+  margin-right:auto;
+  
+}
 
+#gamewin
+{
+  transform: rotate(-6deg);
+}
+
+#gameloose
+{
+  transform: rotate(-3deg);
+}
+
+.ctloverlay.hidden
+{
+  display: none;
+}
+a.action{
+  text-decoration:none;
+  color: #FFB;
+  font-size:200%;
+  display:block;
+  text-align:center;
+}
 
 .b1
 {
  background-image: url("l_back1.png");
+ transform: rotate(5deg);
  }
 
 .b2
 {
  background-image: url("l_back2.png");
+ transform: rotate(-2deg);
  }
 
 
 .b3
 {
  background-image: url("l_back3.png");
+ transform: rotate(-4deg);
  }
+ 
+ 

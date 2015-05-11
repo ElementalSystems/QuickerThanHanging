@@ -1,17 +1,27 @@
 <html>
   <head>
     <title>Quicker Than Hanging</title>
-	<link href='http://fonts.googleapis.com/css?family=Homemade+Apple' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Schoolbell' rel='stylesheet' type='text/css'>
 	<link rel="stylesheet" type="text/css" href="quicker.css">
   </head>
   <body>
     <h1>Quicker Than Hanging</h1>
-	<h2 id=targetword>alteration</h2>
+	<h2 id=targetword >alteration</h2>
 	<div id=picture></div>
+	<div class=ctloverlay id=gamewin>
+	<h1>You won!</h1>
+	<a href=# class=action onclick="start()">Next Level</a>
+	</div>
+	<div class=ctloverlay id=gameloose>
+	<h1>You died!</h1>
+	<a href=# class=action onclick="start()">Continue</a>
+	</div>
 	
+	<div class=ctloverlay id=gamectl>
 	<h3 class="lettercontrols">abcdefghi</h3>
 	<h3 class="lettercontrols">jklmnopqr</h3>
 	<h3 class="lettercontrols">stuvwxyz</h3>
+	</div>
 	
 	
   </body>

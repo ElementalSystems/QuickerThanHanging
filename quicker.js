@@ -36,10 +36,30 @@ function letterButtonClicked(event)
 	   if (ch==game.targetword.charAt(i)) {
 		   found=true;
 		   game.targetletters[i].innerHTML=ch;
+		   game.hits+=1;
 	   }
   if (found) setElementClass(event.currentTarget,'matched');
-  else setElementClass(event.currentTarget,'error');
+  else { 
+    setElementClass(event.currentTarget,'error');
+    game.errors+=1;
+  }
   
+  updateGameStatus()  
+  
+}
+
+function updateGameStatus()
+{
+	if (game.hits==game.targetletters.length) {
+		unsetElementClass(document.getElementById('gamewin'),'hidden');
+	    setElementClass(document.getElementById('gamectl'),'hidden');		
+	}
+	if (game.errors==3) {
+	   unsetElementClass(document.getElementById('gameloose'),'hidden');
+	   setElementClass(document.getElementById('gamectl'),'hidden');		
+	}
+	game.image.style.backgroundPosition=(-game.errors*100)+"% 0%";
+	
 }
 
 function startLevel(word)
@@ -49,7 +69,34 @@ function startLevel(word)
 	t.innerHTML=word;
 	transformLetterTiles(t,'targetletters',true)
 	game.targetletters=document.getElementsByClassName('targetletters');
+	
+	var items=document.getElementsByClassName('letterbutton')
+	for (var i=0;i<items.length;i+=1) {
+	  unsetElementClass(items[i],'matched');
+	  unsetElementClass(items[i],'error');	  
+	}
+	game.hits=0;
+	game.errors=0;	
+	game.image=document.getElementById('picture');
+	setElementClass(document.getElementById('gamewin'),'hidden');
+	setElementClass(document.getElementById('gameloose'),'hidden');
+	unsetElementClass(document.getElementById('gamectl'),'hidden');
+	
+    updateGameStatus()  
+  
 }
 
+function startOneOf(wordlist)
+{
+  var sel=Math.floor(Math.random()*wordlist.length);	
+  startLevel(wordlist[sel]);
+}
+
+function start()
+{
+	startOneOf(["cheap","alter","yacht","teeth","bread","angry","lofty","tepid","chirpy","thump","charged","ugly","dandy","shrug"]);
+}
+
+
 configureControls();
-startLevel('elegant');
+start();
