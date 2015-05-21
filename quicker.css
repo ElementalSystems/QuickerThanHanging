@@ -45,7 +45,7 @@ h4 {
 
 .helptext {
   text-align:center;
-  font-weight: bold;
+  font-weight: normal;
   font-size:100%;
   color: rgba(192,192,255,.8);
   background-color: rgba(64,64,64,.2);
@@ -66,7 +66,7 @@ h4 {
 
 #helpbelow
 {
-  top: 10em;
+  top: 20em;
 }
 
 #mainpanel
@@ -185,4 +185,9 @@ a.action{
       width: 15em;
    }
 
+   
+  #helpbelow
+   {
+   top: 11em;
+  }
 }

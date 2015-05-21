@@ -103,9 +103,9 @@ function startLevel(word)
 }
 
 var wordlevels=[ //requires at least fifty words in each of 10 levels - hectic
-  ["holding","thankfully","thankful","should","gender","garden","player","gloomy","gripped","sharpened","rejected","flatten","pattern","lighter","gathering","pharmacy","geography","photography","tankful","dislodged","packaging","indulging","debugged","mathematics","bearable","forceful","boastful","hearing","herding","hellish","sheepish"],
+  ["thankfully","thankful","should","gender","garden","player","gloomy","gripped","sharpened","rejected","flatten","pattern","lighter","gathering","pharmacy","geography","photography","tankful","dislodged","packaging","indulging","debugged","mathematics","bearable","forceful","boastful","hearing","herding","hellish","sheepish"],
   ["solution","altercation","filling","bedding","flabby","fleet","addiction","deception","balloon","bellboy","bullets","altar","bolted","firmly","clogged","flogged","struggle","flight","plight","gadget","nudity","celery","cheery","quickly","phasing","bakery","qualify","quantity","finger","cottage","begrudge","flexible","doomed"],
-  ["alter","teeth","thump","thank","charged","shrug","shrill","animation","abbey","depiction","false","fumble","pamper","pepper","people","purple","squiggle","gland","hangman","victory","eight","light","fruity","purity","vanity","finery","homophobe","glider","unkempt","leaked","quietly","strength","length","pastry","funny"],
+  ["holding","alter","teeth","thump","thank","charged","shrug","shrill","animation","abbey","depiction","false","fumble","pamper","pepper","people","purple","squiggle","gland","hangman","victory","eight","light","fruity","purity","vanity","finery","homophobe","glider","unkempt","leaked","quietly","strength","length","pastry","funny"],
   ["angry","tepid","chirpy","thump","charged","gallop","gullet","gallery","jilted","felony","filch","babble","bubbly","feeble","double","grudge","haughty","hinge","handgun","ejects","backward","deity","aquaphobe","xenophobe","phantom","phantasm","party","photon","question","smitten","caught","jetlagged","pairing"],
   //Late start starts here
   ["cheap","yacht","bread","lofty","ugly","dandy","shrug","badge","dodge","edgy","couple","doubt","drug","sight","triumph","epitaph","kneel","cookbook","quibble","zealot"],
