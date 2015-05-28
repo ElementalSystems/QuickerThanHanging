@@ -97,7 +97,7 @@ function startLevel(word)
 	var number=randomInt(1,2);
 	if (forceart>-1)
 		number=forceart;	
-	game.image.style.backgroundImage='url(cartoon'+number+'.png)';	
+	game.image.style.backgroundImage='url(cartoon_'+number+'.png)';	
     updateGameStatus()  
   
 }
