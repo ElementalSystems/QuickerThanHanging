@@ -94,7 +94,7 @@ function startLevel(word)
 	unsetElementClass(document.getElementById('gamectl'),'hidden');
 	
 	
-	var number=randomInt(1,2);
+	var number=randomInt(1,4);
 	if (forceart>-1)
 		number=forceart;	
 	game.image.style.backgroundImage='url(cartoon_'+number+'.png)';	
