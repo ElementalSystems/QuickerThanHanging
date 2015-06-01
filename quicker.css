@@ -43,6 +43,14 @@ h4 {
  text-align:center;
 }
 
+
+h5 {
+ font-size: 110%;
+ margin-bottom: 0px;
+ margin-top: 0px;
+ text-align:center;
+ font-weight: normal;
+}
 .helptext {
   text-align:center;
   font-weight: normal;

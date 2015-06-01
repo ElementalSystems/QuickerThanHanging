@@ -26,11 +26,13 @@
 	<a href=# class=action onclick="start(0)">Learn To Play</a>
 	<a href=# class=action onclick="start(1)">Play from Start</a>
 	<a href=# class=action onclick="start(15)">Play from Level 15</a>		
+	<a href=# class=action onclick="showCredits()">Credits</a>		
 	</div>
 	<div class="ctloverlay frame" id=gamewin>
 	<h1>You won!</h1>
 	<a href=# class=action onclick="start(gamelevel+1)">Next Level</a>
 	</div>
+	
 	<div class="ctloverlay frame" id=gameloose>
 	<h1>You died!</h1>
 	<h4>The correct solution was: <span id=targetwordend>Target Word</span></h4>
@@ -38,6 +40,17 @@
 	
 	<a href=# class=action onclick="start_restartpoint()">Try again from level <span id=restartlevel>1</span></a>	
 	<a href=# class=action onclick="reset()">Menu</a>
+	</div>
+	
+	<div class="ctloverlay frame" id=credits>
+	<h1>Credits</h1>
+	<h5>created for <a href=''>twelvegamesayear</a> by <a href=''>elementalsystems</a></h5>
+	<br/>
+	<h5>Special Thanks</h5>
+	<h5><b>Jo Legutka</b> - artwork </h5>
+	<h5><a href=''>stuff.com</a> - word lists</h5>	
+	<br/>
+	<a href=# class=action onclick="reset()">Back</a>
 	</div>
 	
 	<div class="ctloverlay hidden" id=gamectl>

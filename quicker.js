@@ -94,7 +94,7 @@ function startLevel(word)
 	unsetElementClass(document.getElementById('gamectl'),'hidden');
 	
 	
-	var number=randomInt(1,4);
+	var number=randomInt(1,7);
 	if (forceart>-1)
 		number=forceart;	
 	game.image.style.backgroundImage='url(cartoon_'+number+'.png)';	
@@ -150,6 +150,7 @@ function reset()
 	setElementClass(document.getElementById('gamectl'),'hidden');
 	setElementClass(document.getElementById('gamewin'),'hidden');
 	setElementClass(document.getElementById('gameloose'),'hidden');
+	setElementClass(document.getElementById('credits'),'hidden');
 	unsetElementClass(document.getElementById('gamemenu'),'hidden');
 	document.getElementById('picture').style.backgroundImage='url(cover.png)';	
  	document.getElementById('picture').style.backgroundPosition="0% 0%";
@@ -158,6 +159,24 @@ function reset()
 		start(forcelevel);	
 }
 
+function showCredits()
+{
+	unsetElementClass(document.getElementById('credits'),'hidden');
+	setElementClass(document.getElementById('gamemenu'),'hidden');
+	
+}
 
 configureControls();
 reset();
+
+/* Rules for auto word sorting
+
+  for each (aionmsw) +2/pl +2/pul
+  for each (dklh) +5/pl +5/pul
+  for each (gp..) +8/pl +8/pul
+  specific ing +20 ed +10 
+  
+
+
+
+*/
